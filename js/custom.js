@@ -1,7 +1,7 @@
 
   (function ($) {
   
-  "use strict";
+/*   "use strict"; */
 
     // NAVBAR
     $('.navbar-nav .nav-link').click(function(){
