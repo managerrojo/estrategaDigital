@@ -263,19 +263,19 @@ button:focus:not(:focus-visible) {
 
 .descripcion{
   text-align: center;
-  position: relative; 
-  margin-bottom: -120px;
+  position: absolute;
+  bottom: -150px;
+  padding: 0px 5px; 
   z-index: 100;
-  font-size: smaller;
-  color:var(--border-color)
-  
+  font-size: 16px;
+  font-weight: bold;
+  color:black;
+}
 
-  
+.descripcionEric {
+  bottom: -125px;
 }
-:root {
-  --card-height: 300px;
-  --card-width: calc(var(--card-height) / 1.5);
-}
+
 * {
   box-sizing: border-box;
 }
@@ -284,9 +284,16 @@ button:focus:not(:focus-visible) {
   padding: 80px,  ;
   background-color: var(--white-color);
   display: flex;
-  padding: 29px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   border-radius: 7px;
 
+}
+
+.linkCard {
+  margin: 0px 50px;
+  display: block;
 }
 
 #Magigcars {
@@ -307,13 +314,25 @@ button:focus:not(:focus-visible) {
   align-items: flex-end;
   padding: 0 36px;
   perspective: 2500px;
-  margin: 0 50px;
 }
 
 .cover-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.titulo {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  top: 20px;
+  color: white;
+  font-weight: bold;
+  font-family: 'Courgette', cursive;
+  font-size: 25px;
 }
 
 .wrapper {
@@ -372,6 +391,7 @@ button:focus:not(:focus-visible) {
 .title {
   width: 100%;
   transition: transform 0.5s;
+  margin-bottom: 25px;
 }
 .cardma:hover .title {
   transform: translate3d(0%, -50px, 100px);
@@ -387,23 +407,34 @@ button:focus:not(:focus-visible) {
 
 .cardma:hover .character {
   opacity: 1;
-  transform: translate3d(0%, -30%, 100px);
+  transform: translate3d(-5%, -35%, 100px);
 }
+.cardma:hover .characterAntony {
+  opacity: 1;
+  transform: translate3d(5%, -32%, 100px);
+}
+.cardma:hover .characterEric {
+  opacity: 1;
+  transform: translate3d(-2%, -32%, 100px);
+  width: 200px;
+}
+
 :root {
-  --card-height: 300px;
+  --card-height: 350px;
   --card-width: calc(var(--card-height) / 1.5);
 }
 * {
   box-sizing: border-box;
 }
 #Magigcars {
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
+  width: 100%;
+  height: auto;
+  margin-top: 75px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  background: var(--section-bg-color);
+  justify-content: center;
+  background-color: white;
 }
 .card {
   width: var(--card-width);
@@ -655,6 +686,10 @@ button:focus:not(:focus-visible) {
 /*---------------------------------------
   OUR WORK              
 -----------------------------------------*/
+.work {
+  margin-top: 75px;
+}
+
 .work-thumb {
   position: relative;
   overflow: hidden;
