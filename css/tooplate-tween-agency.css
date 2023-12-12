@@ -425,6 +425,7 @@ button:focus:not(:focus-visible) {
   box-sizing: border-box;
 }
 #Magigcars {
+  margin-left: 6rem;
   width: 100%;
   height: auto;
   margin-top: 75px;
